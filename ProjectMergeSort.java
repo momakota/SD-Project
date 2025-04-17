@@ -21,17 +21,17 @@ public class ProjectMergeSort {
         if (givenList.size() < 2) {
             return;
         }
-
-        int mid = givenList.size() / 2;
+        
+        int midpoint = givenList.size() / 2;
 
         ArrayList<String> left = new ArrayList<>();
         ArrayList<String> right = new ArrayList<>();
 
-        for (int i = 0; i < mid; i++) {
+        for (int i = 0; i < midpoint; i++) {
             left.add(givenList.get(i));
         }
 
-        for (int i = mid; i < givenList.size(); i++) {
+        for (int i = midpoint; i < givenList.size(); i++) {
             right.add(givenList.get(i));
         }
 
